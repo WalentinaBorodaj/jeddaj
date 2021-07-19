@@ -1,0 +1,319 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" CONTENT="Джидда,сыр, нубийская коза, англо-нубийские козы, козий сыр">
+<title>Наша продукция</title>
+ <link rel="shortcut icon" href="imgs/plant_flower_nature_abstract_vegetation_flora_icon_181457.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+
+ <style type="text/css">
+       .outline {
+    border: 3px #00B344  dotted; width:300px;
+    padding: 0 10px;
+   }
+  .production{
+    margin:10px;
+  }
+</style>
+</head>
+<body background="imgs/фон1.jpg">
+<script type="text/javascript">
+var lastResFind=""; // последний удачный результат
+var copy_page=""; // копия страницы в ихсодном виде
+function TrimStr(s) {
+     s = s.replace( /^\s+/g, '');
+  return s.replace( /\s+$/g, '');
+}
+function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+  var obj = window.document.getElementById(inputId);
+  var textToFind;
+ 
+  if (obj) {
+    textToFind = TrimStr(obj.value);//обрезаем пробелы
+  } else {
+    alert("Введенная фраза не найдена");
+    return;
+  }
+  if (textToFind == "") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+ 
+  
+  if(copy_page.length>0)
+        document.body.innerHTML=copy_page;
+  else copy_page=document.body.innerHTML;
+
+ 
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+  lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+  window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
+ }
+</script>
+
+
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="imgs/logo 1.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    ДЖИДДА
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Наша продукция</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="galleri.html">Галлерея</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="books.html">Статьи</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+     
+      <input type="text" id="text-to-find" value="">
+      <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
+      <br/><i>Введите слово или фразу для поиска.</i>
+<hr/>
+    </form>
+  </div>
+</nav>
+
+<!-- <header> -->
+
+  
+
+<!-- </header> -->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+     
+    	<h2>Наша продукция</h2>
+ <h2 class="post-title">Йогурт</h2>
+ <img class = "production" src="imgs/jogurt.jpg" width="200" height="200" align="left"  />
+    
+Йогурт-продукт,известный человечеству уже сотни лет.
+Он улучшает работу пищеварительной системы и укрепляет иммунитет.
+Йогурт - это продукт окисления молока полезными бактериями.В процессе переработки молочного белка эти бактерии вырабатывают питательные вещества, необходимые для организма человека. Его могут употреблять в пищу даже те люди ,которые не переносят белок, содержащийся в свежем молоке. В результате  действия молочной кислоты, образующейся в результате жизнедеятельности бактерий ,молочный белок распадается до мелких хлопьев и лучше усваивается организмом . 
+Наш йогурт  "СКИФИЯ" сделан на основе цеьного козьего молока и натуральной болгарской палочки .Регулярное употребление йогурта обеспечит ваш организм необходимым количеством питательных веществ и витаминов ,а так же обеспечит профилактику многих заболеваний !
+  
+  <hr align="center" width="500" size="2" color="#dc9612" />
+<br />
+
+<h2 class="post-title">Сыр "Пектораль"</h2>
+ <!-- <img class = "production" src="imgs/pectoral2.jpg" width="200" height="200" align="left" alt="козий сыр"/> -->
+ <img class = "production" src="imgs/pectoral1.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+ ПЕКТОРАЛЬ - золотое украшение скифского воина,которое защищало его грудь и шею в бою...
+Сыр "ПЕКТОРАЛЬ"  по форме и цвету напоминает древний атрибут."Пектораль"- сыр для гриля, хотя употреблять его в пищу можно, как жареном,так и в свежем виде.В его состав входят куркума,тмин,кумин,мята .
+<p>Сыр "ПЕКТОРАЛЬ"- настоящее украшение любого стола.</p>
+<br />
+<br />
+<br />
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Сыр "Сезам"</h2>
+<img class = "production" src="imgs/sesam.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+
+"Сезам, откройся» - хорошо знакомое с детства  выражение.
+Но не все знают ,что сезам  – это  кунжут .
+Выражение «сезам откройся»  имеет интересное происхождение .
+Оказывается ,что зрелые семена кунжута (сезама) при прикосновении раскрываются с громким треском.
+С древних времен  люди по всему миру  используют семена кунжута в пищу.
+Скифы верили, что семена сезама обладают омолаживающим  эффектом .
+<p>Плавленый сыр «СЕЗАМ», в состав которого входят семена кунжута,
+  изменит ваше мнение о плавленых сырах и « откроет с громким треском» новую грань  вкусовых ощущений.</p>
+  <br />
+
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Сыр "Фенхель"</h2>
+ <img class = "production" src="imgs/fenchel.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+Фенхель ,а  в простонародье - укроп...
+После зимней стужи это растение одним из первых появляется у нас на столе...
+"Фенхель"-  это мягкий ,малосольный сыр с традиционными украинскими травами и семенами льна,кунжута и фенхеля , который всегда первым начинает наш молочный сезон. 
+Сыр"Фенхель" идеально подойдёт к любому весеннему салату и к утреннему чаепитию.
+"Фенхель" - здоровое начало дня.
+<br />
+<br />
+<br />
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+
+<h2 class="post-title">Сыр "Шамаш"</h2>
+ <img class = "production" src="imgs/roll.jpg" width="200" height="200" align="left" alt="козий сыр" />
+  Шамаш – солнце .
+С древних  времен люди поклонялись солнцу.
+Скифские народы в своей символике изображали солнце виде изогнутой спирали .
+Сырный ролл « Шамаш» , в состав которого входят цельные сливки ,мясо краба и икра красной  рыбы – это гармония вкуса и эстетики .
+«Шамаш» - солнечное начало дня !
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Творожный десерт "Кайса"</h2>
+ <img class = "production" src="imgs/jemcyg1.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+Нежная творожная масса в сочетании с изюмом и кайсой ,более привычное название для многих курагой, идеально подойдёт к завтраку или лёгкому ужину.
+Любимец детворы и не только...
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Сыр "Снежный жемчуг"</h2>
+ <img class = "production" src="imgs/jemcyg.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+Снежный Жемчуг-
+небольшие сырные шарики , весом,примерно, 50 грамм, с благородной белой плесенью.Плотная сердцевина  и нежная растекающаяся структура ближе к корочке.Пикантный ,слегка острый сырный жемчуг -отличное дополнение к бокалу вина или тонизирующей чашечке кофе.
+Снежный жемчуг ,несмотря на свой крошечный вес ,может обрушиться градом вкусовых ощущений и растаять, оставив после себя морозную остроту и свежесть сливочного послевкусия.
+<br />
+<br />
+<!-- <div class="video">
+    <iframe src="video/jemcyg.mp4"
+      width="300" height="300" 
+     controls="controls">
+    </iframe>
+    
+   </div> -->
+
+ <video src ="video/jemcyg.mp4" width="300" height="300"controls></video>
+
+<br />
+
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Освежающий напиток "ЦитриН"</h2>
+<img class = "production" src="imgs/citrin.jpg" width="200" height="200" align="left" />
+Цитрин приготовлен на основе натурального , свежевыжатого апельсинового и лимонного соков,а так же обезжиренной козьей сыворотки.
+Сыворотка - древнейший продукт.
+Это - результат переработки молока в сыр.
+ И,несмотря на свою обежжиренность ,сыворотка продолжает оставаться целебным напитком ,она способна очищать организм от токсинов,многих видов паразитов, улучшает работу всего желудочно-кишечного тракта,повышает иммунитет.
+Сыворотка богата витаминами . Белок, содержащийся в ней, способен удалять чувство голода.Поэтому если есть желание убрать лишний вес - это то, что вам нужно!
+Свежевыжатый апельсиновый и лимонный соки дополнят Цитрин своими незаменимыми компонентами - витаминами С ,Е,В1,В2,В6; минераламии и микроэлементами, которые помогут очистить кровь и сосуды ,придать бодрости и сил.
+ Благодаря регулярному употреблению напитка Цитрин на основе сыворотки и апельсиново- лимонного сока,можно не только избавиться от жажды ,но и привести в порядок свой организм.
+<br />
+
+<hr align="center" width="500" size="2" color="#dc9612" />
+
+<h2 class="post-title">Сыр "ОЛИВКОВЫЙ АГАТ"</h2>
+<p>Полутвердый сорт сыра с благородной голубой плесенью.
+Как волокна на агате ,островки голубой плесени играют на сыре,придавая ему не только изысканный вид, но и неповторимый вкус и аромат.</p>
+<img class = "production"src="imgs/agat1.jpg" width="200" height="200" align="left" alt="козий сыр" />
+<img class = "production"src="imgs/agat.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+<img class = "production"src="imgs/agat2.jpg" width="200" height="200" align="left" alt="козий сыр"/>
+
+<br />
+
+</div>
+
+     
+    <div class="col-md-4"><br /> <!-- <h3 class="widget-title"></h3> -->
+      <div class="outline">
+        <br />
+<br>Край старинных , древних мифов ,</br>
+<br>где курганы живших скифов,</br>
+<br>Край ,где старый Базавлук</br>
+<br>разливается на луг,</br>
+<br>Где широкие долины , </br>
+<br>край, где заросли маслины,</br>
+<br>Где трава заколосилась -</br> 
+<br>наша «Джидда» зародилась.</br>
+<br>Лишь подарит солнце свет</br>
+ <br>и появится рассвет,</br>
+<br>Ранним утром на зоре ,</br>
+<br>вдоль над речкой ,по горе </br>
+<br>Ходит в поле стадо коз, </br>
+<br>умываясь влагой рос.</br>
+<br>Гордой поступью идут ,</br>
+<br>в мир степей ,где их там ждут:</br>
+<br>Свежесть утренней прохлады ,</br>
+ <br>горечь трав ,поля, левады,</br>
+<br>Вкус маслины терпко-сладкий</br>
+ <br>и тростник от ветра шаткий.</br>
+<br>Ждут их трели соловья ,</br>
+<br>суетливость муравья,</br>
+<br>Беспокойные сороки ,</br>
+<br>распускающие склоки.</br>
+<br>Из сверчков –оркестр прекрасный ,</br>
+<br>хор лягушек громогласный,</br>
+<br>Древних предков тусклый след,</br>
+ <br>тень давно минувших лет.</br>
+<br>Там,в гармонии с природой,</br>
+ <br>наслаждаются свободой.</br>
+<br>Наблюдая этот мир ,</br>
+<br>мы создали в Джидде –сыр!</br>
+<br>В нем оттенок молока </br>
+<br>будет с вкусом тростника,</br>
+<br>С ноткой утренней росы,</br>
+<br> с запахом степной красы,</br> 
+<br>С ароматом конюшины, </br>
+<br>терпкой сладостью  маслины.</br>
+<br>С вкусом таинств неоткрытых</br>
+<br> и легенд давно забытых .</br>
+<br>Так, вдали от суеты ,</br>
+<br>воплотились в жизнь мечты.</br>
+<br>Джидда –  уголочек мира ,</br>
+<br>место  - зарожденья сыра!</br>
+<br />
+</div>
+</div>
+
+</div>
+  <br />  
+  </div>
+</div>
+
+ 
+ 
+ 
+
+<footer class="cotainer-fluid bg-dark text-white p-3 mb-2">
+
+<div class="socicons">
+            <a href="https://www.facebook.com/cheese.from.jeddah">
+              <i class="fab fa-facebook-f">  мы в facebook</i>
+            </a> 
+            </div>
+            <p>&copy;jeddah, Copyright 2021 All rights reserved</p>
+
+        </div>
+<!-- <p>Контакти: <a href="mailto:nobody@nowhere.com">e-mail@here.com</a></p> -->
+</footer>
+
+
+
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>  
+
+</body>
+</html>

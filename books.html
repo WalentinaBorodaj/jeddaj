@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" CONTENT="Джидда,сыр,нубийская коза, англо-нубийские козы, козий сыр, астрагал, англо-нубийская порода коз">
+	<title>Статьи</title>
+	 <link rel="shortcut icon" href="imgs/plant_flower_nature_abstract_vegetation_flora_icon_181457.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+<link rel="stylesheet" href="fontawesome/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body background="imgs/фон1.jpg">
+  <script type="text/javascript">
+var lastResFind=""; // последний удачный результат
+var copy_page=""; // копия страницы в ихсодном виде
+function TrimStr(s) {
+     s = s.replace( /^\s+/g, '');
+  return s.replace( /\s+$/g, '');
+}
+function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
+  var obj = window.document.getElementById(inputId);
+  var textToFind;
+ 
+  if (obj) {
+    textToFind = TrimStr(obj.value);//обрезаем пробелы
+  } else {
+    alert("Введенная фраза не найдена");
+    return;
+  }
+  if (textToFind == "") {
+    alert("Вы ничего не ввели");
+    return;
+  }
+ 
+  
+  if(copy_page.length>0)
+        document.body.innerHTML=copy_page;
+  else copy_page=document.body.innerHTML;
+
+ 
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
+  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
+  lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
+  window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
+ }
+</script>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+  	<img src="imgs/logo 1.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    ДЖИДДА
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="productions.html">Наша продукция</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link " href="galleri.html">Галлерея</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link " href="#">Статьи</a>
+      </li>
+    </ul>
+
+
+
+   <form class="form-inline my-2 my-lg-0">
+     
+      <input type="text" id="text-to-find" value="">
+      <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
+      <br/><i>Введите слово или фразу для поиска.</i>
+<hr/>
+    </form>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+     <h2> Удивительные растения нашего пастбища...</h2>
+     <img src="imgs/astragal.jpg" class="rounded img-fluid mx-auto d-block" alt="астрагал">
+Астрагал- лекарственное растение,разновидностей которого насчитывают более двух тысяч сортов. Растет астрагал преимущественно в степях ,на хорошо освещённой територии.Особенно предпочитает местность обогащеную золотом ,которое он впитывает в себя и накапливает. Помимо золота растение состоит почти из всех металлов таблицы, так же кремния и фосфора. Из органических в- в содержит вы витамины А,С,и Е,алкалоиды,полисахариды,дубильные вещества и многое другое.Но главной особенностью астрагала  является то,что он способен накапливать в себе селен.Селен это очень важный элемент для коз.Достаточное его количество в организме нормализует окислительные процессы, повышает иммунобиологическую реактивность организма, рост, привесы, шерстную, молочную продуктивность.
+Все содержащиеся в астрагале вещества так идеально подобраны ,что делают лечебные свойства это растения уникальными.Недаром это растение стало применятся в медицине более 1000 лет назад ещё скифами.Они называли астрагал 
+"Царской травой".Для лечения его могли использовать только мужчины и только из высших слоев.Скифы готовили из астрагала элексиры молодости и долголетия. Астрагал до сих пор широко используется в фитотерапии. Астрагал-Царская трава, сохранившаяся до наши дней.
+
+<video src ="video/astragal.mp4" width="300" height="300"controls></video>
+<h2> Живая закваска в живом сыре</h2>
+ <img src="imgs/zakvaska.jpg" width="200" height="200" align="left" > 
+ Кефирный  Тибетский молочный гриб – группа бактерий и микроорганизмов используемая для получения молочного продукта такого как –кефир. Благотворно влияет на здоровье человека, используется в кулинарии ,а в нашем случае в качестве закваски для изготовления сыров. В состав гриба входят лактобактерии, уксуснокислые бактерии ,молочные дрожжи. Лактобацилы – одни из наиболее важных в группе молочных бактерий , т.к. превращают лактозу и другие углеводы в молочную кислоту. Кислая среда – препятствует росту многих патогенных бактерий и грибов. Это одна из основных причин использования молочного гриба в качестве закваски.  Лактобактерии имеют –антагонистическое действие (эффект комбинированного действия ,т.е. полное уничтожение одного вещества другим)по отношению к патогенным  микроорганизмам, таким как стафилококки , кишечные палочки, и т.п. Поэтому лактобактерии составляют основную часть микрофлоры кишечника. Они повышают сопротивляемость организма к различным заболеваниям . Лактобактерии  широко используют для изготовления йогуртов, сыров, они участвуют в засолке овощей и приготовлении маринадов , в брожении силоса ,так как бактерии приводят к торможению процесс развития плесени , что обеспечивает  длительное и качественное  хранение продуктов.
+В производстве нашего сыра мы  используем молокосвертывающий фермент  животного происхождения , а в качестве  закваски – кефир молочного гриба, кислая среда которого защищает наш сыр от роста патогенных микроорганизмов. Сыр – это не заменимый продукт по содержанию витаминов ,белков ,жиров и углеводов. Белки сыра – намного легче усваиваются ,чем белки молока. Сыр по сути – это концентрат молока, питательные вещества которого , быстро и легко усваиваются организмом .  Мы хотим ,чтобы наш сыр , зарожденный среди кустов маслины  и степных трав ,был таким же живым и натуральным, как сама природа!
+
+    </div>
+    <div class="col-sm">
+      <h2>Специи</h2>
+ 
+<img src="imgs/specii1.jpg"  class="rounded img-fluid mx-auto d-block" alt="козий сыр - специи">
+
+С давних времён люди использую в пищу всевозможные травы и специи.
+Специи предают блюду совершенно иной вкус ,запах, а иногда даже и цвет.Многие виды трав - отличные консерванты, недаром Скифские народы прикрывали сосуд с молоком пучком степных трав,оборачивали травами сыр,продлевая таким образом его срок хранения.
+Например, мята, содержащая в себе эфирное масло ментол, - отличный консервант,продлевает хранение сыров и предает невераятный аромат и вкус.Без мяты нельзя представить себе такой известный сыр как - халлуми.<img src="imgs/pectoral.jpg"  class="rounded img-fluid mx-auto d-block"alt="козий сыр">
+<img src="imgs/pectoral1.jpg"  class="rounded img-fluid mx-auto d-block"alt="козий сыр">
+<p>Смеси черного,розового и душистого перцев, в жгучем веществе которых содержатся алкалоиды, - препятствуют росту патогенной микрофлоры.Сырные шарики Белпер Кнолле имеют свой неповторимый вкус ,вид, аромат, а,главное, длительный срок хранения благодаря смеси этих удивительных специй.
+Королевой среди консервантов можно смело назвать куркуму.Куркума - природный антибиотик.Она обладает противоокислительным и фингицидным свойствами.Помимо этого в ней содержится природный краситель куркумин,который даёт возможность использовать куркуму в качестве натурального красителя.
+Тмин,кумин,кориандр,пажитник- все эти и другие специи играют не последнюю роль в формировании сырной головки.Они придают сыру неповторимый вкус,цвет и аромат,подчёркивая тем самым его индивидуальность.</p>
+<img src="imgs/specii2.jpg"  class="rounded img-fluid mx-auto d-block"alt="козий сыр">
+    </div>
+    <div class="col-sm">
+      
+<h2>Англо-нубийская порода коз.</h2>
+<img src="imgs/uho1.jpg" class="rounded img-fluid mx-auto d-block" alt="англо-нубийская порода коз">
+Удивительная порода, предки которой пришли из стран Востока и Африки .
+ Нубия - большая территория в Северной Африке.Название происходит от древнеегипетского слова "nub" - золото.
+Эту, действительно, золотую породу выводили в течении многих лет в Англии, а затем и в других странах Европы,усовершенствуя ее как внешний вид так и репродуктивные возможности этой породы.
+Помимо экзотической внешности: длинных свисающих ушей и римского профиля, мощного корпуса и разнообразных окрасов, эти животные впечатляют качеством производимого ими молока. От сливочно - пломбирного ,до мендально- ореховых оттенков,с высоким процентом белка и жира. Нубийские козы-животные с  удивительным интеллектом.  Любознательные и эмоциональные.Преданно любящие всех членов своей нубийской семьи ,очень нуждаются в близком контакте с человеком.
+Нубийцы отлично оклиматизировалась в нашей стране,  во многих городах  и селах можна наблюдать этих удивительных созданий ,чистопородных ористократов  и % метисов   ,скрещенных с другими породами.
+Возможно, уже очень скоро многих перестанет восхищать  их внешний вид ,но вкус молока нубийской козы не перестанет удивлять никогда.
+
+<img src="imgs/kosa6.jpg"  class="rounded img-fluid mx-auto d-block" alt="нубийская коза">
+
+<img src="imgs/detka3.jpg"  class="rounded img-fluid mx-auto d-block" alt="нубийская коза">
+
+<img src="imgs/vetka masliny.jpg"  class="rounded img-fluid mx-auto d-block" alt="нубийская коза">
+
+
+
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<footer class="cotainer-fluid bg-dark text-white p-3 mb-2">
+
+<div class="socicons">
+            <a href="https://www.facebook.com/cheese.from.jeddah">
+              <i class="fab fa-facebook-f">  мы в facebook</i>
+            </a> 
+            </div>
+            <p>&copy;jeddah, Copyright 2021 All rights reserved</p>
+
+        </div>
+<!-- <p>Контакти: <a href="mailto:nobody@nowhere.com">e-mail@here.com</a></p> -->
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>  	
+</body>
+</html>
